@@ -93,7 +93,7 @@ email = "kmartinstyleshair@gmail.com"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "1640 W Division St.", city = "Chicago", region = "IL", postcode = "60622", country = "United States", country_code = "US"}
+address = {street = "Kimball Arts Center, 1757 N Kimball Ave.", city = "Chicago", region = "IL", postcode = "60647", country = "United States", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
@@ -104,7 +104,7 @@ coordinates = {latitude = "41.903590", longitude = "-87.669090"}
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Saturday 9-5", "Sunday 12-7", "Monday 12-8"]
+office_hours = ["Wednesday  12-8", "Sunday 12-5"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 # appointment_url = "https://calendly.com"
