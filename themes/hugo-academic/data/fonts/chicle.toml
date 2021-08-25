@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Chicle"
+
+# Optional Google font URL
+google_fonts = "Chicle:400,700,cursive|Merriweather|Roboto+Mono"
+
+# Font families
+heading_font = "Chicle"
+body_font = "Merriweather"
+nav_font = "Lato"
+mono_font = "Roboto Mono"
