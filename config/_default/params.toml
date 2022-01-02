@@ -97,14 +97,14 @@ address = {street = "Kimball Arts Center, 1757 N Kimball Ave.", city = "Chicago"
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "41.903590", longitude = "-87.669090"}
+coordinates = {latitude = "41.913441", longitude = "-87.711273"}
 
 # Directions for visitors to locate you.
 #directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Wednesday  12-8", "Sunday 12-5"]
+office_hours = []
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 # appointment_url = "https://calendly.com"
