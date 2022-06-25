@@ -53,37 +53,37 @@ subtitle = ""
 <div class="article">
   <span class="item">Short Cut</span>
   <span class="dots"></span>
-  <span class="price">$45</span>
+  <span class="price">$50</span>
 </div>
 
 <div class="article">
   <span class="item">Chin to Long Cut</span>
   <span class="dots"></span>
-  <span class="price">$55</span>
+  <span class="price">$60</span>
 </div>
 
 <div class="article">
   <span class="item">Midback Cut</span>
   <span class="dots"></span>
-  <span class="price">$65</span>
+  <span class="price">$70</span>
 </div>
 
 <div class="article">
   <span class="item">Beard Groom</span>
   <span class="dots"></span>
-  <span class="price">$15</span>
+  <span class="price">$20</span>
 </div>
   
 <div class="article">
   <span class="item">Bang Trim</span>
   <span class="dots"></span>
-  <span class="price">$15</span>
+  <span class="price">$20</span>
 </div>
   
  <div class="article">
   <span class="item">Children under 10</span>
   <span class="dots"></span>
-  <span class="price">$30</span>
+  <span class="price">$35</span>
 </div>
 <br>
 
