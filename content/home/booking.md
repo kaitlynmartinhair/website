@@ -50,7 +50,4 @@ subtitle = ""
  css_class = ""
 +++
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/kmartinstyleshair?primary_color=4d8680" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
+<!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/wki1ohzxqr471q/GCF4XQ0VMKM6H.js'></script><!-- End Square Appointments Embed Code -->
