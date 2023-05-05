@@ -67,23 +67,24 @@ subtitle = ""
   <span class="dots"></span>
   <span class="price">$70</span>
 </div>
-
-<div class="article">
-  <span class="item">Beard Groom</span>
-  <span class="dots"></span>
-  <span class="price">$20</span>
-</div>
   
 <div class="article">
-  <span class="item">Bang Trim</span>
+  <span class="item">Bangs & Bits</span>
   <span class="dots"></span>
-  <span class="price">$20</span>
+  <span class="price">$25</span>
+</div>
+
+
+ <div class="article">
+  <span class="item">Undercut/Sides Fade</span>
+  <span class="dots"></span>
+  <span class="price">$25</span>
 </div>
   
  <div class="article">
   <span class="item">Children under 10</span>
   <span class="dots"></span>
-  <span class="price">$35</span>
+  <span class="price">$30</span>
 </div>
 <br>
 
@@ -93,135 +94,18 @@ subtitle = ""
 
 ## Color
 
-<u style="font-weight: 700;">Single process color</u>
+*Hair coloring services are based on an hourly rate of $85 per hour. Hair color consultations are required for any new color client.*
 
-<div class="article">
-  <span class="item">Root touchup</span>
-  <span class="dots"></span>
-  <span class="price">$85</span>
-</div>
+Additional reasons to book a hair consultation:
 
-<div class="article">
-  <span class="item">Gloss</span>
-  <span class="dots"></span>
-  <span class="price">$45 - $75</span>
-</div>
-<br>
-<u style="font-weight: 700;">Double process color <i>starting at pricing</i></u>
+- Mapping out a plan to reach hair goals in a healthy way
+- Understanding the process of the color you want to receive
+- More accurate time and budgeting estimate
+- Color upkeep (i.e. product recommendations, how frequent you will need to book appointments)
 
-<div class="article">
-  <span class="item">Partial Foil</span>
-  <span class="dots"></span>
-  <span class="price">$105 - $155</span>
-</div>
-
-<div class="article">
-  <span class="item">Full Foil</span>
-  <span class="dots"></span>
-  <span class="price">$130 - $180</span>
-</div>
-
-<div class="article">
-  <span class="item">Mega Foil</span>
-  <span class="dots"></span>
-  <span class="price">$155 - $205</span>
-</div>
- 
-<div class="article">
-  <span class="item">Balayage</span>
-  <span class="dots"></span>
-  <span class="price">$140 - $190</span>
-</div>
-
-<div class="article">
-  <span class="item">Corrective Color</span>
-  <span class="dots"></span>
-  <span class="price">$85 per hour</span>
-</div>
-
-<div class="article">
-  <span class="item">Global Lightning</span>
-  <span class="dots"></span>
-  <span class="price">$115 per hour</span>
-</div>
-<br>
-
-*Color pricing is based off Length and density of hair, Additional cost will be applied to compensate for additional color used in service. Consultations are encouraged, and complimentary*
+Book an in-person color consultation or if you are a new client, please email Kmartinstyleshair@gmail.com with your inquiry.
 
 <br>
-
-## Treatments
-
-<div class="article">
-  <span class="item">Olaplex</span>
-  <span class="dots"></span>
-  <span class="price">$35</span>
-</div>
-
-*Concentrated treatment protecting and strengthening hair from within during color service.* 
-
-<div class="article">
-  <span class="item">Chemistry Treatment</span>
-  <span class="dots"></span>
-  <span class="price">$25</span>
-</div>
-
-*Customizable to your hair needs. Helps treat dull, dry, brittle hair. Helps promote strength, moisture, and volume to the hair.*
-
-<div class="article">
-  <span class="item">Heat Cure</span>
-  <span class="dots"></span>
-  <span class="price">$40</span>
-</div>
-
-*Restores hairs healthy look, provides shine and softness. This in salon treatment uses a custom iron to push treatment deep within the cuticle of the hair.*
-
-<div class="article">
-  <span class="item">Custom Deep Conditioner Mask</span>
-  <span class="dots"></span>
-  <span class="price">$20</span>
-</div>
-
-*Moisturizing mask.*
-
-<br>
-
-*Treatments are mandatory after color services to preserve the health and integrity of your hair, The health and overall wellness of your hair is important to me as a stylist, I will recommend treatments when your hair is requesting them. *
-
-<br>
-
-## Additional Services 
-
-<div class="article">
-  <span class="item">Shampoo, Blow dry, Style</span>
-  <span class="dots"></span>
-  <span class="price">$50</span>
-</div>
-
-<div class="article">
-  <span class="item">Iron Work</span>
-  <span class="dots"></span>
-  <span class="price">$15</span>
-</div>
-
-<div class="article">
-  <span class="item">Brow tint</span>
-  <span class="dots"></span>
-  <span class="price">$25</span>
-</div>
-
-<div class="article">
-  <span class="item">Brow Shaping</span>
-  <span class="dots"></span>
-  <span class="price">$20</span>
-</div>
-
-<div class="article">
-  <span class="item">Tint + Shapping Bundle</span>
-  <span class="dots"></span>
-  <span class="price">$35</span>
-</div>
-
 
 
 
