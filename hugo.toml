@@ -1,0 +1,22 @@
+baseURL = "https://kaitlynmartinhair.com/"
+languageCode = "en-us"
+title = "Kaitlyn Martin Hair"
+
+# GitHub Pages serves this repo at the domain above (custom domain via CNAME)
+# If you ever move to the default *.github.io URL instead, update baseURL to
+# match, e.g. "https://<username>.github.io/<repo>/"
+
+[params]
+  heroImage = "/images/hero.png"
+  name = "Kaitlyn Martin"
+  tagline = "Hair Stylist"
+  instagram = ""            # e.g. "https://instagram.com/yourhandle"
+  email = ""                # e.g. "hello@kaitlynmartinhair.com"
+  # Paste the embed snippet from Square Appointments here (Dashboard >
+  # Online Booking > Share > Website embed code). Keep the HTML as-is.
+  squareEmbedCode = '''
+  <!-- PASTE YOUR SQUARE BOOKING EMBED CODE HERE -->
+  '''
+
+[markup.goldmark.renderer]
+  unsafe = true
