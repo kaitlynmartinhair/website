@@ -7,7 +7,7 @@ title = "Kaitlyn Martin Hair"
 # match, e.g. "https://<username>.github.io/<repo>/"
 
 [params]
-  heroImage = "/images/hero.png"
+  heroImage = "images/hero.png"
   name = "Kaitlyn Martin"
   tagline = "roots run deep, style runs free"
 

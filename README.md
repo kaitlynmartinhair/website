@@ -17,7 +17,7 @@ GitHub Actions.
 │   ├── css/style.css          all styling
 │   ├── images/hero.png        the hero photo
 │   └── CNAME                  custom domain for GitHub Pages
-└── .github/workflows/hugo.yaml  builds + deploys on every push to main
+└── .github/workflows/hugo.yaml  builds + deploys on every push to master
 ```
 
 No theme submodule, no Python step — just Hugo.
@@ -38,8 +38,8 @@ Open http://localhost:1313 to preview. `Ctrl+C` to stop.
 
 ## 2. Point "Book Now" at Square Appointments
 
-The nav "Book" link and every "Book Now" button open `bookingUrl` from
-`hugo.toml` directly in a new tab — no embed needed:
+Every "Book Now" button opens `bookingUrl` from `hugo.toml` directly in a
+new tab — no embed needed:
 
 ```toml
 bookingUrl = "https://book.squareup.com/appointments/..."
@@ -54,9 +54,9 @@ appear (it's hidden automatically if left blank).
 git init
 git add .
 git commit -m "Initial site"
-git branch -M main
+git branch -M master
 git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
+git push -u origin master
 ```
 
 ## 4. Turn on GitHub Pages (one-time)
@@ -64,7 +64,7 @@ git push -u origin main
 In the repo on GitHub: **Settings → Pages → Build and deployment → Source →
 GitHub Actions**. That's it — the workflow in
 `.github/workflows/hugo.yaml` will build and deploy automatically on every
-push to `main`. Check the **Actions** tab for build status.
+push to `master`. Check the **Actions** tab for build status.
 
 ## 5. Custom domain
 
