@@ -1,0 +1,34 @@
+baseURL = "https://kaitlynmartinhair.com/"
+languageCode = "en-us"
+title = "Kaitlyn Martin Hair"
+
+# GitHub Pages serves this repo at the domain above (custom domain via CNAME)
+# If you ever move to the default *.github.io URL instead, update baseURL to
+# match, e.g. "https://<username>.github.io/<repo>/"
+
+[params]
+  heroImage = "/images/hero.png"
+  name = "Kaitlyn Martin"
+  tagline = "roots run deep, style runs free"
+
+  # Nav "Portfolio" link — points at Instagram since that's the portfolio.
+  portfolio = "https://www.instagram.com/kaitlyn.martin.hair/"
+  email = ""                # e.g. "hello@kaitlynmartinhair.com"
+
+  # Square Appointments booking page. Both "Book" nav links open this
+  # directly in a new tab — no embed needed.
+  bookingUrl = "https://book.squareup.com/appointments/wki1ohzxqr471q/location/GCF4XQ0VMKM6H/services"
+
+  # Shown in the "Where to find" section on the homepage.
+  [params.address]
+    name = "Kimball Arts Center"
+    street = "1757 N Kimball Ave"
+    city = "Chicago"
+    region = "IL"
+    postcode = "60647"
+
+  # Optional list of office hours lines. Leave as [] to hide the hours list.
+  hours = []
+
+[markup.goldmark.renderer]
+  unsafe = true

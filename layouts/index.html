@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<main>
+  <img class="hero-image" src="{{ .Site.Params.heroImage | relURL }}" alt="{{ .Site.Params.name }}">
+
+  <section class="intro">
+    <h1 class="intro-heading">{{ .Site.Params.tagline }}</h1>
+    {{ with .Content }}<div class="intro-copy">{{ . }}</div>{{ end }}
+    {{ if .Site.Params.bookingUrl }}<a href="{{ .Site.Params.bookingUrl }}" target="_blank" rel="noopener" class="pill-button">Book Now</a>{{ end }}
+  </section>
+
+  {{ with .Site.Params.address }}
+  <section class="location">
+    <h2 class="eyebrow">Where to find {{ $.Site.Params.name }}</h2>
+    <p class="location-details">
+      {{ with .name }}{{ . }}<br>{{ end }}
+      {{ .street }}<br>
+      {{ .city }}, {{ .region }} {{ .postcode }}
+    </p>
+    {{ with $.Site.Params.hours }}
+    <ul class="hours-list">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </section>
+  {{ end }}
+</main>
+
+{{ end }}

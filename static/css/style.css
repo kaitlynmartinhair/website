@@ -1,0 +1,252 @@
+:root {
+  --bg: #fbf6ee;
+  --fg: #2e2a25;
+  --muted: #7d7267;
+  --accent: #7c8c4b;
+  --pill-bg: #e3b98f;
+  --pill-fg: #3c2a1a;
+  --border: rgba(61, 42, 26, 0.12);
+  --heading-font: "Rye", Georgia, "Times New Roman", serif;
+  --body-font: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--body-font);
+}
+
+a { color: inherit; }
+
+/* Header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 2rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--heading-font);
+  font-size: 1.35rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.logo-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-icon img {
+  display: block;
+  height: 30px;
+  width: auto;
+  mix-blend-mode: multiply;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.site-nav a:hover { color: var(--accent); }
+
+.pill-button {
+  display: inline-block;
+  padding: 0.7rem 1.75rem;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: filter 0.2s ease;
+}
+
+.pill-button:hover { filter: brightness(0.94); }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--fg);
+}
+
+/* Mobile nav overlay */
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: var(--bg);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s;
+}
+
+.mobile-nav.is-open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav nav {
+  display: flex;
+  flex-direction: column;
+  width: min(320px, 80vw);
+}
+
+.mobile-nav nav a {
+  padding: 1.1rem 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.05rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.mobile-nav nav a:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.mobile-nav-cta { margin-top: 2rem; }
+
+.menu-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+/* Intro */
+
+.intro {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.intro-heading {
+  font-family: var(--heading-font);
+  color: var(--accent);
+  font-size: clamp(1rem, 3.8vw, 2.6rem);
+  white-space: nowrap;
+  margin: 0 0 1rem;
+}
+
+.intro-copy {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.intro-copy p { margin: 0; }
+
+/* Location */
+
+.location {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4.5rem;
+}
+
+.eyebrow {
+  font-family: var(--heading-font);
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+}
+
+.location-details {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hours-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  color: var(--muted);
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+  .site-nav,
+  .nav-cta {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-header {
+    padding: 1rem 1.25rem;
+  }
+}
