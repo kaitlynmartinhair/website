@@ -9,14 +9,26 @@ title = "Kaitlyn Martin Hair"
 [params]
   heroImage = "/images/hero.png"
   name = "Kaitlyn Martin"
-  tagline = "Hair Stylist"
-  instagram = ""            # e.g. "https://instagram.com/yourhandle"
+  tagline = "roots run deep, style runs free"
+
+  # Nav "Portfolio" link — points at Instagram since that's the portfolio.
+  portfolio = "https://www.instagram.com/kaitlyn.martin.hair/"
   email = ""                # e.g. "hello@kaitlynmartinhair.com"
-  # Paste the embed snippet from Square Appointments here (Dashboard >
-  # Online Booking > Share > Website embed code). Keep the HTML as-is.
-  squareEmbedCode = '''
-  <!-- PASTE YOUR SQUARE BOOKING EMBED CODE HERE -->
-  '''
+
+  # Square Appointments booking page. Both "Book" nav links open this
+  # directly in a new tab — no embed needed.
+  bookingUrl = "https://book.squareup.com/appointments/wki1ohzxqr471q/location/GCF4XQ0VMKM6H/services"
+
+  # Shown in the "Where to find" section on the homepage.
+  [params.address]
+    name = "Kimball Arts Center"
+    street = "1757 N Kimball Ave"
+    city = "Chicago"
+    region = "IL"
+    postcode = "60647"
+
+  # Optional list of office hours lines. Leave as [] to hide the hours list.
+  hours = []
 
 [markup.goldmark.renderer]
   unsafe = true

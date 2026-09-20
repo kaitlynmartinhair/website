@@ -1,17 +1,18 @@
 # kaitlynmartinhair.com
 
 A minimal, one-page Hugo site for Kaitlyn Martin Hair — full-bleed hero photo,
-booking section, deployed free via GitHub Pages + GitHub Actions.
+"Book Now" links out to Square Appointments, deployed free via GitHub Pages +
+GitHub Actions.
 
 ## What's here
 
 ```
 .
-├── hugo.toml                  site config (name, tagline, links, Square embed)
+├── hugo.toml                  site config (name, tagline, links, booking URL)
 ├── content/_index.md          homepage copy
 ├── layouts/
-│   ├── _default/baseof.html   page shell (head, css)
-│   └── index.html             homepage layout (hero + booking section)
+│   ├── _default/baseof.html   page shell (head, nav, footer)
+│   └── index.html             homepage layout (hero, intro, location)
 ├── static/
 │   ├── css/style.css          all styling
 │   ├── images/hero.png        the hero photo
@@ -35,21 +36,17 @@ hugo server -D
 
 Open http://localhost:1313 to preview. `Ctrl+C` to stop.
 
-## 2. Add the Square booking embed
+## 2. Point "Book Now" at Square Appointments
 
-In your Square Dashboard: **Online Checkout / Appointments → Share → Website
-embed code**. Copy the snippet Square gives you and paste it into
-`hugo.toml`, replacing the placeholder comment inside `squareEmbedCode`:
+The nav "Book" link and every "Book Now" button open `bookingUrl` from
+`hugo.toml` directly in a new tab — no embed needed:
 
 ```toml
-squareEmbedCode = '''
-<div id="square-booking-widget"></div>
-<script src="https://..."></script>
-'''
+bookingUrl = "https://book.squareup.com/appointments/..."
 ```
 
-Also fill in `instagram` and `email` in `hugo.toml` if you want those nav
-links to appear (they're hidden automatically if left blank).
+Also fill in `email` in `hugo.toml` if you want the "Contact" nav link to
+appear (it's hidden automatically if left blank).
 
 ## 3. Push to GitHub
 

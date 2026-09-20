@@ -1,32 +1,29 @@
 {{ define "main" }}
 
-<header class="hero" style="background-image: url('{{ .Site.Params.heroImage | relURL }}');">
-  <div class="hero-overlay">
-    <h1 class="hero-name">{{ .Site.Params.name }}</h1>
-    <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
-    <a href="#booking" class="hero-cta">Book Now</a>
-  </div>
-</header>
+<main>
+  <img class="hero-image" src="{{ .Site.Params.heroImage | relURL }}" alt="{{ .Site.Params.name }}">
 
-<nav class="site-nav">
-  <a href="#booking">Book</a>
-  {{ if .Site.Params.instagram }}<a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
-  {{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">Contact</a>{{ end }}
-</nav>
-
-<main class="content">
-  {{ .Content }}
-
-  <section id="booking" class="booking">
-    <h2>Book an Appointment</h2>
-    <div class="square-embed">
-      {{ .Site.Params.squareEmbedCode | safeHTML }}
-    </div>
+  <section class="intro">
+    <h1 class="intro-heading">{{ .Site.Params.tagline }}</h1>
+    {{ with .Content }}<div class="intro-copy">{{ . }}</div>{{ end }}
+    {{ if .Site.Params.bookingUrl }}<a href="{{ .Site.Params.bookingUrl }}" target="_blank" rel="noopener" class="pill-button">Book Now</a>{{ end }}
   </section>
-</main>
 
-<footer class="site-footer">
-  <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.name }}</p>
-</footer>
+  {{ with .Site.Params.address }}
+  <section class="location">
+    <h2 class="eyebrow">Where to find {{ $.Site.Params.name }}</h2>
+    <p class="location-details">
+      {{ with .name }}{{ . }}<br>{{ end }}
+      {{ .street }}<br>
+      {{ .city }}, {{ .region }} {{ .postcode }}
+    </p>
+    {{ with $.Site.Params.hours }}
+    <ul class="hours-list">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </section>
+  {{ end }}
+</main>
 
 {{ end }}

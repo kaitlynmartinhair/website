@@ -5,10 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Site.Params.name }} — {{ .Site.Params.tagline }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   <link rel="icon" href="data:,">
 </head>
 <body>
+  <header class="site-header">
+    <a class="logo" href="{{ "/" | relURL }}">
+      <span class="logo-icon" aria-hidden="true">
+        <img src="https://media.giphy.com/media/30WsmJrE7HQdC5Ue0x/giphy.gif" alt="">
+      </span>
+      <span class="logo-text">{{ .Site.Title }}</span>
+    </a>
+
+    <nav class="site-nav">
+      {{ if .Site.Params.portfolio }}<a href="{{ .Site.Params.portfolio }}" target="_blank" rel="noopener">Portfolio</a>{{ end }}
+      {{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">Contact</a>{{ end }}
+    </nav>
+
+    {{ if .Site.Params.bookingUrl }}<a href="{{ .Site.Params.bookingUrl }}" target="_blank" rel="noopener" class="pill-button nav-cta">Book Now</a>{{ end }}
+
+    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div id="mobile-nav" class="mobile-nav">
+    <button type="button" class="menu-close" aria-label="Close menu">&times;</button>
+    <nav>
+      {{ if .Site.Params.portfolio }}<a href="{{ .Site.Params.portfolio }}" target="_blank" rel="noopener">Portfolio</a>{{ end }}
+      {{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">Contact</a>{{ end }}
+    </nav>
+    {{ if .Site.Params.bookingUrl }}<a href="{{ .Site.Params.bookingUrl }}" target="_blank" rel="noopener" class="pill-button mobile-nav-cta">Book Now</a>{{ end }}
+  </div>
+
   {{ block "main" . }}{{ end }}
+
+  <footer class="site-footer">
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.name }}</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector(".menu-toggle");
+      var close = document.querySelector(".menu-close");
+      var nav = document.getElementById("mobile-nav");
+
+      function openNav() {
+        nav.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeNav() {
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      }
+
+      toggle.addEventListener("click", openNav);
+      close.addEventListener("click", closeNav);
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeNav);
+      });
+    })();
+  </script>
 </body>
 </html>
